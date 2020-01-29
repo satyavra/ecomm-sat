@@ -1,4 +1,41 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
+<style>
+
+  .sidebarSubmenu::-webkit-scrollbar-track
+  {
+
+    border-radius: 7px;
+
+  }
+
+  .sidebarSubmenu::-webkit-scrollbar
+  {
+    width: 5px;
+
+  }
+
+  .sidebarSubmenu::-webkit-scrollbar-thumb
+  {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color:rgb(127,127,127);
+  }
+
+  [data-toggle="collapse"]:after {
+    font-family: 'FontAwesome';
+    color: rgb(81,170,27);
+    margin-top: 3px;
+    font-size: 12px;
+    content:"\f068";
+    float: left;
+
+  }   
+  [data-toggle="collapse"].collapsed:after {
+   content:"\f067";
+ }
+ 
+
+</style>
 
 <?php
 // print_r($all_categories);
@@ -16,6 +53,7 @@ foreach ($all_categories as $categorie) {
   // print_r($arrCategories);
 }
 ?>
+
 <div class="container-fluid">
   <div class="row" style="margin-top:91px;">
     <div class="col-md-3 sidebarSubmenu pr-0 d-none d-sm-none d-md-block" >
@@ -148,6 +186,9 @@ border-radius: 1.25rem;">Rice and other grains</a>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
 <script>
+
+
+  //Get the button
   var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -166,5 +207,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 </script>
