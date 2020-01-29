@@ -15,20 +15,6 @@ foreach ($all_categories as $categorie) {
   }
 }
 ?>
-<style>
- [data-toggle="collapse"]:after {
-  font-family: 'FontAwesome';
-  color: rgb(81,170,27); 
-  margin-top: 3px;
-  font-size: 12px;
-  content:"\f068";
-  float: left;
-
-}   
-[data-toggle="collapse"].collapsed:after {
- content:"\f067";
-}
-</style>
 
 <nav class=" navbar navbar-expand-md text-muted bg-white d-none d-sm-none d-md-block" style="position: sticky; top: 79px; z-index:100">
   <div class="container-fluid">
