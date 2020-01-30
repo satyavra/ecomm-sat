@@ -89,20 +89,30 @@
   <div class="input-group-prepend ">
    <p class="input-group-text bg-white border-right-0" id="inputGroup-sizing-default"><i class="fa fa-search"></i> &nbsp;<span style="font-size: 10px;" class="text-muted"></span></p>
  </div>
-<!--  <input type="text" class="form-control  border-left-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
+ <!--  <input type="text" class="form-control  border-left-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
 
-<select class="form-control border-left-0" id="selectCity">
+<!-- <select class="form-control border-left-0" id="selectCity">
       <option>Delhi</option>
       <option>Mumbai</option>
       <option>Patna</option>
       <option>Noida</option>
       <option>Lucknow</option>
-    </select>
+    </select> -->
+     <input class="form-control border-left-0 border-right-0" type="text" id="selectCity" list="places" placeholder="Type your city">
+  
+  <datalist id="places">
+    <option value="Delhi">
+    <option value="Mumbai">
+    <option value="Patna">
+    <option value="Banglore">
+    <option value="Chennai">
+    <option value="Noida">
+  </datalist>
 
- <div class="input-group-append">
-   <button class="btn btn-outline-secondary " type="button" id="button-addon2" onclick="getLocation()"><i class="fa fa-location-arrow "></i> &nbsp;&nbsp;Detect</button>
+   <div class="input-group-append">
+     <button class="btn btn-outline-secondary " type="button" id="button-addon2" onclick="getLocation()"><i class="fa fa-location-arrow "></i> &nbsp;&nbsp;Detect</button>
+   </div>
  </div>
-</div>
 </form>
 </div>
 
@@ -117,30 +127,31 @@
 <input class="form-control col-md-9 col-sm-2 rounded" type="text" placeholder="Search for items..." aria-label="Search">
 </div>
 <div class="collapse navbar-collapse mr-2" id="navbarSupportedContent">
- <ul class="navbar-nav mr-auto">
-  <li class="nav-item dropdown mr-5">
-   <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    My Account<br>
-    <span  style=" position:relative;position: relative;
-    top: -3px; font-size: 0.7rem !important;">Login/Sign Up</span>
-  </a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My Account<br>
+            <span  style=" position:relative;position: relative;
+            top: -3px; font-size: 0.7rem !important;">Login/Sign Up</span>
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="    position: absolute;left: -194px;top:70px;width: 276px; "><div>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="text-center ml-5 btn btn-danger pl-4 pr-4" data-toggle="modal" data-target="#exampleModal">
+              Login or Signup
+            </button>
 
-  <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="    position: absolute;
-  left: -194px;
-  top:70px;
-  width: 276px; "><div>
-    <button type="button" class="text-center ml-5 btn btn-danger pl-4 pr-4 ">Login or Signup</button>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#"><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;FAQs</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#"><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;Offers</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#"><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;Recipies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;FAQs</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;Offers</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-chain-broken"></i>&nbsp;&nbsp;Recipies</a>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
-</div>
-</li>
-</ul>
-</div>
 <a href="<?=base_url('shopping-cart')?>" style="text-decoration: none;">
 
  <i class="fa fa-shopping-cart d-inline text-white fa-lg" data-toggle="modal" data-target="#exampleModal"></i><span class="pl-1" style="color:white;"><?= $cartItems['array'] == 0 ? 0 : $sumOfItems ?></span>
@@ -185,9 +196,29 @@
 </div>
 </nav>
 <!-- my nav bar end -->
-<script>
- 
-</script>
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="text-center">Phone No Verification</h5>
+        </div>
+        <div class=" bg-light pb-3">
+          <p class="pt-5 text-center font-weight-normal">Enter your phone number to<br>
+          Login/Sign up</p>
+          <form class="col-7 mx-auto form-group">
+            <div class=" input-group  mt-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-mobile"></i></span>
+              </div>
+              <input type="text" class="form-control" id="" aria-describedby="" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-primary  btn-block mt-3">Next</button>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

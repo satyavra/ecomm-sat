@@ -200,7 +200,15 @@ function showPosition(position) {
  console.log( "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude);
 
- var locAPI ="http://maps.googleapis.com/maps/api/geocode/json?latlang"+position.coords.latitude+","+position.coords.longitude+"&sensor=true";
+ var locAPI ="https://api.opencagedata.com/geocode/v1/google-v3-json?q="+position.coords.latitude+"+"+position.coords.longitude+"&key=ff1c1acb607548b5827e7eee82b17ff6";
  console.log(locAPI);
+ $.get({
+ 	url:locAPI,
+ 	success:function(data){
+ 		
+ 		loc=data.results[0].address_components[3].long_name;
+ 		console.log(loc);
+ 	}
+ });
 
 };
