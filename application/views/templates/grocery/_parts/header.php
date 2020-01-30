@@ -36,7 +36,7 @@
   </div>
   <ul class="navbar-nav mr-auto location ">
     <li class="nav-item dropdown">
-     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-map-marker"></i>
+     <a class="nav-link dropdown-toggle text-white" href="#" id="LocationSelect" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-map-marker"></i>
       location
     </a>
 
@@ -89,9 +89,18 @@
   <div class="input-group-prepend ">
    <p class="input-group-text bg-white border-right-0" id="inputGroup-sizing-default"><i class="fa fa-search"></i> &nbsp;<span style="font-size: 10px;" class="text-muted"></span></p>
  </div>
- <input type="text" class="form-control  border-left-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+<!--  <input type="text" class="form-control  border-left-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
+
+<select class="form-control border-left-0" id="selectCity">
+      <option>Delhi</option>
+      <option>Mumbai</option>
+      <option>Patna</option>
+      <option>Noida</option>
+      <option>Lucknow</option>
+    </select>
+
  <div class="input-group-append">
-   <button class="btn btn-outline-secondary " type="button" id="button-addon2"><i class="fa fa-location-arrow "></i> &nbsp;&nbsp;Detect</button>
+   <button class="btn btn-outline-secondary " type="button" id="button-addon2" onclick="getLocation()"><i class="fa fa-location-arrow "></i> &nbsp;&nbsp;Detect</button>
  </div>
 </div>
 </form>
@@ -176,6 +185,9 @@
 </div>
 </nav>
 <!-- my nav bar end -->
+<script>
+ 
+</script>
 
 
 

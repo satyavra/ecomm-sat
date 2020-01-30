@@ -41,24 +41,31 @@ foreach ($all_categories as $categorie) {
         </ul> -->
         
         <?php
-
+        
         function loop_tree($pages, $is_recursion = false)
         {
+          // $i = 0;
+          // print_r($pages);
           ?>
-          <!-- <ul class="<?= $is_recursion === true ? 'children' : 'parent' ?>"> -->
-            <!-- <ul class="list-group list-group-flush sidemenu"> -->
+          <!-- <ul class="list-group list-group-flush <?= $is_recursion === true ? 'collapse submenu' : 'sidemenu' ?>" id="<?= $is_recursion === true ? 'collapse_'.$i : '' ?>" > -->
 
-              <ul class="list-group list-group-flush <?= $is_recursion === true ? 'collapse submenu' : 'sidemenu' ?>" <?= $is_recursion === true ? 'id="collapse_<?= $page["id"];?>"' : '' ?> >
+            <?php
+            if($is_recursion !== true){
+              ?>
+              <ul class="list-group list-group-flush sidemenu">
+              <?php 
+            }
+            foreach ($pages as $page) {
+                  // $page_id = $page["id"];
+              $children = false;
+              ?>
+              <li class="list-group-item">
                 <?php
-                foreach ($pages as $page) {
-                  $children = false;
-                  ?>
-                  <li class="list-group-item">
-                    <?php
-                    if (isset($page['children']) && !empty($page['children'])) {
-                      $children = true;
-                    }
-                    ?>
+                if (isset($page['children']) && !empty($page['children'])) {
+                  $children = true;
+
+                }
+                ?>
 
               <!-- <a href="javascript:void(0);" data-categorie-id="<?= $page['id'] ?>" class="go-category left-side <?= isset($_GET['category']) && $_GET['category'] == $page['id'] ? 'selected' : '' ?>">
                 <?= $page['name'] ?>
@@ -70,119 +77,120 @@ foreach ($all_categories as $categorie) {
                     <!-- <li class="list-group-item">
                       <a data-categorie-id="<?= $page['id'] ?>" class="<?= isset($_GET['category']) && $_GET['category'] == $page['id'] ? 'selected' : '' ?>"><?= $page['name'] ?></a>
                     </li> -->
-                    <?php loop_tree($page['children'], true); ?>
-                    <!-- </ul> -->
-                  <?php } else {
-                    ?>
+                    <ul class="list-group list-group-flush collapse submenu" id="collapse_<?= $page['id'];?>" >
+                      <?php loop_tree($page['children'],true) ?>
+                      <!-- </ul> -->
+                    <?php } else {
+                      ?>
 
-                    <?php
-                  }?>
-                </li>
-              <?php }
-              ?>
-            </ul>
-            <?php
-            if ($is_recursion === true) {
-              ?>
+                      <?php
+                    }?>
+                  </li>
+                <?php }
+                ?>
+              </ul>
               <?php
+              if ($is_recursion === true) {
+                ?>
+                <?php
+              }
             }
-          }
 
-          loop_tree($home_categories);
-          ?>
+            loop_tree($home_categories);
+            ?>
 
+          </div>
         </div>
-      </div>
-      <!-- right side contents -->
-      <div class="col-md-9 itemList">
-       <div class="row">
-        <div class="col-md-12">
-          <img class="img-fluid" src="<?= base_url('template/imgs/sale1.jpg') ?>">
-        </div>
+        <!-- right side contents -->
+        <div class="col-md-9 itemList">
+         <div class="row">
+          <div class="col-md-12">
+            <img class="img-fluid" src="<?= base_url('template/imgs/sale1.jpg') ?>">
+          </div>
 
-        <div class=" col-md-12 ">
-          <div class=" ">
-            <div class="row bg-white">
-              <div class="col-md-6 col-sm-12 ">
-               <ol class="breadcrumb  bg-transparent">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
-              </ol>
-              <p class="font-weight-bold pl-3 mt-n4">Pulses</p>
-            </div>
-
-            <div class="col-md-6 col-sm-12  cat-filter">
-              <div class=" d-inline-flex float-right mt-2 " >
-                <label class="col-form-label float-sm-left pr-4 " for="name">Sort</label>
-                <select id="dashboard-filter" class="form-control text-danger"style="width: 240px;" >
-                  <option>Popularity</option>
-                  <option>Price Low to high</option>
-                  <option>Price high to low</option>
-                  <option>Discounts</option>
-                  <option>Name(A to Z)</option>
-                </select>
+          <div class=" col-md-12 ">
+            <div class=" ">
+              <div class="row bg-white">
+                <div class="col-md-6 col-sm-12 ">
+                 <ol class="breadcrumb  bg-transparent">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+                <p class="font-weight-bold pl-3 mt-n4">Pulses</p>
               </div>
+
+              <div class="col-md-6 col-sm-12  cat-filter">
+                <div class=" d-inline-flex float-right mt-2 " >
+                  <label class="col-form-label float-sm-left pr-4 " for="name">Sort</label>
+                  <select id="dashboard-filter" class="form-control text-danger"style="width: 240px;" >
+                    <option>Popularity</option>
+                    <option>Price Low to high</option>
+                    <option>Price high to low</option>
+                    <option>Discounts</option>
+                    <option>Name(A to Z)</option>
+                  </select>
+                </div>
+              </div>
+
             </div>
 
           </div>
-
         </div>
+
       </div>
+
+      <div class="btnStyleCategory d-md-none  border-top border-bottom py-2 bg-white"  style="overflow: scroll;
+      white-space: nowrap;">
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true"  style="
+      border-radius: 1.25rem;">New Launches</a>
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
+      border-radius: 1.25rem;">Pulses</a>
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true"style="
+      border-radius: 1.25rem;">Wheat</a>
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true"style="
+      border-radius: 1.25rem;" >Vegetables</a>
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
+      border-radius: 1.25rem;">Pet care</a>
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
+      border-radius: 1.25rem;">Flour</a>
+      <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
+      border-radius: 1.25rem;">Rice and other grains</a>
+
 
     </div>
 
-    <div class="btnStyleCategory d-md-none  border-top border-bottom py-2 bg-white"  style="overflow: scroll;
-    white-space: nowrap;">
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true"  style="
-    border-radius: 1.25rem;">New Launches</a>
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
-    border-radius: 1.25rem;">Pulses</a>
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true"style="
-    border-radius: 1.25rem;">Wheat</a>
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true"style="
-    border-radius: 1.25rem;" >Vegetables</a>
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
-    border-radius: 1.25rem;">Pet care</a>
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
-    border-radius: 1.25rem;">Flour</a>
-    <a href="#" class="btn btn-outline-success " role="button" aria-pressed="true" style="
-    border-radius: 1.25rem;">Rice and other grains</a>
+    <div class="row">
+      <?php
+      for ($i=0; $i <=6; $i++) { ?>
+        <div class="col-md-4 mt-1">
+          <div class="card">
+           <span class="badge badge-danger mt-2 ml-1 font-weight-bold" style="width: 66px">50% OFF</span><img class="img-fluid mx-auto d-block" src="<?=base_url('template/imgs/fishoil.jpeg')?>">
+           <div class="card-body">               
+            <p class="card-text text-muted">Quick sample text to create the card </p>
+            <p class="card-text text-muted">pack of 6 </p>
+            <div class="">
+              <span class="font-weight-bolder">&#8377; 1000 </span>&nbsp;<span class="text-muted"><s>2000</s></span>
+              <span class="qty pl-4">
+                <button type="button" class="addTocartBtn btn btn-outline-success btn-rounded  py-1" style="border-radius: 1.25rem;">Add To Cart</button>
 
+                <span class="add-more-item" style="display: none;">
+                  <span class="minus bg-white text-danger border minus" onclick="minusItem(this);">-</span>
+                  <input type="number" class="count" name="qty" value="1" >
+                  <span class="plus bg-dark bg-white text-danger border plus" onclick="plusItem(this);">+</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="card-footer bg-white d-flex justify-content-center border-top-0" style="font-size: .9rem;">
+            <span class="border bg-light text-primary ">&nbsp;<i class="fa fa-user-plus"></i>&nbsp;Club price:&#8377; 559<span class="pl-5">></span></span>
+          </div>
+        </div>
+      </div>
+    <?php }
+    ?>
 
   </div>
-
-  <div class="row">
-    <?php
-    for ($i=0; $i <=6; $i++) { ?>
-      <div class="col-md-4 mt-1">
-        <div class="card">
-         <span class="badge badge-danger mt-2 ml-1 font-weight-bold" style="width: 66px">50% OFF</span><img class="img-fluid mx-auto d-block" src="<?=base_url('template/imgs/fishoil.jpeg')?>">
-         <div class="card-body">               
-          <p class="card-text text-muted">Quick sample text to create the card </p>
-          <p class="card-text text-muted">pack of 6 </p>
-          <div class="">
-            <span class="font-weight-bolder">&#8377; 1000 </span>&nbsp;<span class="text-muted"><s>2000</s></span>
-            <span class="qty pl-4">
-              <button type="button" class="addTocartBtn btn btn-outline-success btn-rounded  py-1" style="border-radius: 1.25rem;">Add To Cart</button>
-
-              <span class="add-more-item" style="display: none;">
-                <span class="minus bg-white text-danger border minus" onclick="minusItem(this);">-</span>
-                <input type="number" class="count" name="qty" value="1" >
-                <span class="plus bg-dark bg-white text-danger border plus" onclick="plusItem(this);">+</span>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="card-footer bg-white d-flex justify-content-center border-top-0" style="font-size: .9rem;">
-          <span class="border bg-light text-primary ">&nbsp;<i class="fa fa-user-plus"></i>&nbsp;Club price:&#8377; 559<span class="pl-5">></span></span>
-        </div>
-      </div>
-    </div>
-  <?php }
-  ?>
-
-</div>
 </div>
 </div>
 </div>
