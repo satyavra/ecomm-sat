@@ -107,8 +107,8 @@ class Loop
                     <!------ product category ------------->
 
                     <div class="card  <?= $classes ?> <?= $active ?>" style="width: 18rem;">
-                     <?php
-                     if ($article['old_price'] != '' && $article['old_price'] != 0 && $article['price'] != '' && $article['price'] != 0) {
+                       <?php
+                       if ($article['old_price'] != '' && $article['old_price'] != 0 && $article['price'] != '' && $article['price'] != 0) {
                         $percent_friendly = number_format((($article['old_price'] - $article['price']) / $article['old_price']) * 100) . '%';
                         ?>
                         <span class="badge badge-danger ml-2 mt-2 px-2 font-weight-bold"><?= $percent_friendly ?> OFF</span>
@@ -127,36 +127,45 @@ class Loop
                   <div class="row">
                     <div class="col-5 mt-2">
                       <span class="font-weight-bold">
-                         ₹<?= $article['price'] != '' ? number_format($article['price'], 0) : 0 ?>
-                     </span>
-                     <s class="pl-1 ">
-                        ₹<?= $article['old_price'] != '' ?number_format($article['old_price'], 0) : 0 ?>
-                    </s>
-                </div>
-                <div class="col-7 ">
-                    <a href="javascript:void(0);" class=" add-to-cart btn-add" data-id="<?= $article['id'] ?>">
-                        <button type="button" class="btn addTocartBtn btn-outline-success btn-rounded" style="border-radius: 1.25rem;">Add To Cart</button>
-                        <div class="qty" style="display: none">
-                         <span class="minus bg-white text-danger border minus mr-1">-</span>
-                         <input type="number" class="input-cart" name="qty" value='' >
-                          <span class="plus bg-dark bg-white text-danger border plus ml-1" >+</span>
-                          </div>
-
-                    </a>
-                </div>
+                       ₹<?= $article['price'] != '' ? number_format($article['price'], 0) : 0 ?>
+                   </span>
+                   <s class="pl-1 ">
+                    ₹<?= $article['old_price'] != '' ?number_format($article['old_price'], 0) : 0 ?>
+                </s>
             </div>
-        </div>
-        <div class="card-footer bg-white d-flex justify-content-center border-top-0" style="font-size: .9rem;">
-          <span class="border bg-light text-primary ">&nbsp;<i class="fa fa-user-plus"></i>&nbsp;Club price:&#8377; 559<span class="pl-5">></span></span>
+            <div class="col-7 ">
 
-      </div>
+                        
+                        <a href="javascript:void(0);" type="button" class="addTocartBtn add-to-cart btn btn-outline-success btn-rounded" style="border-radius: 1.25rem;" data-id="<?= $article['id'] ?>">Add To Cart</a>
+                 
+
+                    <div class="qty" style="display: none">
+
+
+
+                       <a class=" qty bg-white text-danger border minus 
+                       " onclick="removeProduct(<?= $article['id']?>, );minusItem(this);">-</a>
+
+                       <input type="number" class="input-cart" name="qty" value='<?= $article['num_added'] ?>' style="width: 20px;" >
+                       <a class="bg-white text-danger border add-to-cart btn-add plus" onclick="plusItem(this);" data-id="<?= $article['id'] ?>">+</a>
+                   </div>
+
+               </a>
+
+           </div>
+       </div>
+   </div>
+   <div class="card-footer bg-white d-flex justify-content-center border-top-0" style="font-size: .9rem;">
+      <span class="border bg-light text-primary ">&nbsp;<i class="fa fa-user-plus"></i>&nbsp;Club price:&#8377; 559<span class="pl-5">></span></span>
 
   </div>
 
+</div>
 
 
-  <?php
-  $i++;
+
+<?php
+$i++;
 }
 if ($carousel == true) {
     ?>
