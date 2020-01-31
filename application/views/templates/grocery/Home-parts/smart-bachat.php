@@ -19,10 +19,18 @@
 								<p class="card-text text-muted">pack of 6 </p>
 								<div class="">
 									<span class="font-weight-bolder">&#8377; 1000 </span>&nbsp;<span class="text-muted"><s>2000</s></span>
-									<button type="button" class="btn btn-outline-success btn-rounded ml-2  float-right py-1" style="
-									border-radius: 1.25rem;
+									<span class="qty">
+                        <span class="add-more-item">
+                          <a class="" onclick="" href="javascript:void(0);" style="text-decoration: none;">
+                           <span class="minus bg-white text-danger border minus">-</span>
+                         </a>
 
-									">Add To Cart</button>
+                         <input type="number" class="input-cart" name="qty" value='' >
+                         <a class="refresh-me add-to-cart " data-id=" " href="javascript:void(0);" style="text-decoration: none;">
+                           <span class="plus bg-dark bg-white text-danger border plus" >+</span>
+                         </a>
+                       </span>
+                     </span>
 								</div>
 							</div>
 

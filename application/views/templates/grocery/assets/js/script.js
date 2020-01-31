@@ -7,22 +7,22 @@
 
 
 
-		// $(".addTocartBtn").click(function(){
-		// 	$(this).hide();
-		// 	this.nextElementSibling.style.display = "unset";
-		// 	this.nextSibling.nextElementSibling.children.qty.value = 1;
-		// });
-		// $('.count').prop('disabled', true);
-		// function plusItem(val){
-		// 	this.plusItem.arguments[0].previousElementSibling.valueAsNumber+=1;
-		// }
-		// function minusItem(val){
-		// 	this.minusItem.arguments[0].nextElementSibling.valueAsNumber-=1;
-		// 	if((this.minusItem.arguments[0].nextElementSibling.value) == 0){
-		// 		this.minusItem.arguments[0].parentElement.previousElementSibling.style.display = "unset";
-		// 		this.minusItem.arguments[0].parentElement.style.display = "none";
-		// 	}
-		// }
+		$(".addTocartBtn").click(function(){
+			$(this).hide();
+			this.nextElementSibling.style.display = "unset";
+			this.nextSibling.nextElementSibling.children.qty.value = 1;
+		});
+		$('.count').prop('disabled', true);
+		function plusItem(val){
+			this.plusItem.arguments[0].previousElementSibling.valueAsNumber+=1;
+		}
+		function minusItem(val){
+			this.minusItem.arguments[0].nextElementSibling.valueAsNumber-=1;
+			if((this.minusItem.arguments[0].nextElementSibling.value) == 0){
+				this.minusItem.arguments[0].parentElement.previousElementSibling.style.display = "unset";
+				this.minusItem.arguments[0].parentElement.style.display = "none";
+			}
+		}
 
 
 
@@ -183,7 +183,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){w
     $("#selectCity").change(function()
     {
         var cityName=$(this).val();
-        LocationSelect
+      
         $("#LocationSelect").html(cityName);
        // alert(id);
     });
@@ -201,13 +201,14 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude);
 
  var locAPI ="https://api.opencagedata.com/geocode/v1/google-v3-json?q="+position.coords.latitude+"+"+position.coords.longitude+"&key=ff1c1acb607548b5827e7eee82b17ff6";
- console.log(locAPI);
  $.get({
  	url:locAPI,
  	success:function(data){
+	console.log(data);
+ 		loc=data.results[0].address_components[2].short_name;
+ 	
+ 		 $("#LocationSelect").html(loc);
  		
- 		loc=data.results[0].address_components[3].long_name;
- 		console.log(loc);
  	}
  });
 

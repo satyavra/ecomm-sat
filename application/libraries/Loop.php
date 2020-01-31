@@ -134,8 +134,14 @@ class Loop
                     </s>
                 </div>
                 <div class="col-7 ">
-                    <a href="javascript:void(0);" class="refresh-me add-to-cart btn-add" data-id="<?= $article['id'] ?>">
-                        <button type="button" class="btn btn-outline-success btn-rounded" style="border-radius: 1.25rem;">Add To Cart</button>
+                    <a href="javascript:void(0);" class=" add-to-cart btn-add" data-id="<?= $article['id'] ?>">
+                        <button type="button" class="btn addTocartBtn btn-outline-success btn-rounded" style="border-radius: 1.25rem;">Add To Cart</button>
+                        <div class="qty" style="display: none">
+                         <span class="minus bg-white text-danger border minus mr-1">-</span>
+                         <input type="number" class="input-cart" name="qty" value='' >
+                          <span class="plus bg-dark bg-white text-danger border plus ml-1" >+</span>
+                          </div>
+
                     </a>
                 </div>
             </div>
