@@ -7,22 +7,22 @@
 
 
 
-		$(".addTocartBtn").click(function(){
-			$(this).hide();
-			this.nextElementSibling.style.display = "unset";
-			this.nextSibling.nextElementSibling.children.qty.value = 1;
-		});
-		$('.count').prop('disabled', true);
-		function plusItem(val){
-			this.plusItem.arguments[0].previousElementSibling.valueAsNumber+=1;
-		}
-		function minusItem(val){
-			this.minusItem.arguments[0].nextElementSibling.valueAsNumber-=1;
-			if((this.minusItem.arguments[0].nextElementSibling.value) == 0){
-				this.minusItem.arguments[0].parentElement.previousElementSibling.style.display = "unset";
-				this.minusItem.arguments[0].parentElement.style.display = "none";
-			}
-		}
+$(".addTocartBtn").click(function(){
+	$(this).hide();
+	this.nextElementSibling.style.display = "unset";
+	this.nextSibling.nextElementSibling.children.qty.value = 1;
+});
+$('.count').prop('disabled', true);
+function plusItem(val){
+	this.plusItem.arguments[0].previousElementSibling.valueAsNumber+=1;
+}
+function minusItem(val){
+	this.minusItem.arguments[0].nextElementSibling.valueAsNumber-=1;
+	if((this.minusItem.arguments[0].nextElementSibling.value) == 0){
+		this.minusItem.arguments[0].parentElement.previousElementSibling.style.display = "unset";
+		this.minusItem.arguments[0].parentElement.style.display = "none";
+	}
+}
 
 
 
@@ -179,37 +179,116 @@ eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){w
 
  // get location code
  $(document).ready(function()
-{
-    $("#selectCity").change(function()
-    {
-        var cityName=$(this).val();
-      
-        $("#LocationSelect").html(cityName);
+ {
+ 	$("#selectCity").change(function()
+ 	{
+ 		var cityName=$(this).val();
+
+ 		$("#LocationSelect").html(cityName);
        // alert(id);
-    });
-});
+   });
+ });
+
+
+ // setting location cookies
+ function checkCookie() {	
+ 	var loc=getCookie("location");
+ 	if (loc != "") {
+ 		$("#LocationSelect").html(loc);
+ 	} else {
+ 		getLocation();
+ 	}
+ }
+
+ function setCookie(location,loc,exdays) {
+ 	var d = new Date();
+ 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+ 	var expires = "expires=" + d.toGMTString();
+ 	document.cookie = location + "=" + loc + ";" + expires + ";path=/";
+ }
+
+ function getCookie(location) {
+ 	var locname = location + "=";
+ 	var decodedCookie = decodeURIComponent(document.cookie);
+ 	var ca = decodedCookie.split(';');
+ 	for(var i = 0; i < ca.length; i++) {
+ 		var c = ca[i];
+ 		while (c.charAt(0) == ' ') {
+ 			c = c.substring(1);
+ 		}
+ 		if (c.indexOf(locname) == 0) {
+ 			return c.substring(locname.length, c.length);
+ 		}
+ 	}
+ 	return "";
+ }
+
  function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
+ 	if (navigator.geolocation) {
+ 		navigator.geolocation.getCurrentPosition(showPosition);
+ 	} else { 
     // x.innerHTML = "Geolocation is not supported by this browser.";
-  }
+}
 }
 
 function showPosition(position) {
- console.log( "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude);
+	console.log( "Latitude: " + position.coords.latitude + 
+		"<br>Longitude: " + position.coords.longitude);
 
- var locAPI ="https://api.opencagedata.com/geocode/v1/google-v3-json?q="+position.coords.latitude+"+"+position.coords.longitude+"&key=ff1c1acb607548b5827e7eee82b17ff6";
- $.get({
- 	url:locAPI,
- 	success:function(data){
-	console.log(data);
- 		loc=data.results[0].address_components[2].short_name;
- 	
- 		 $("#LocationSelect").html(loc);
- 		
- 	}
- });
+	var locAPI ="https://api.opencagedata.com/geocode/v1/json?q="+position.coords.latitude+"+"+position.coords.longitude+"&key=ff1c1acb607548b5827e7eee82b17ff6";
+	
+	$.get({
+		url:locAPI,
+		success:function(data){	
+			var loc=data.results[0].components.city;
+			setCookie("location", loc, 30);
+			$("#LocationSelect").html(loc);
+			console.log(loc);
+ 		 // $("#LocationSelect").html(loc);
+
+ 		}
+ 	});
 
 };
+
+function gifLoader() {
+	
+	document.getElementById("loader").style.display = "";
+	document.getElementById("locationSelect").style.display = "none";
+	setTimeout(function(){ 
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("locationSelect").style.display = "";
+		$("#locationSelect").removeClass("show");
+
+	}, 1000);
+}
+$("#optBtn").click(function(){
+	$("#exampleModal").hide();
+	$("#otpverify").show();
+});
+$( document ).ready(function() {
+	checkCookie();
+});
+
+$('#locationSelect').on('click', function(event){
+    // The event won't be propagated up to the document NODE and 
+    // therefore delegated events won't be fired
+    event.stopPropagation();
+});
+
+// login model popup
+function showDialog2() {
+    $("#exampleModal").removeClass("fade").modal("hide");
+    $("#exampleModal2").modal("show");
+}
+
+// $("#dialog1").modal("show");
+
+$("#dialog-ok").on("click", function () {
+	showDialog2();
+    // alert('msg');
+});
+
+// $("#test").on("click", function () {
+//     $(".modal-backdrop").fadeOut("slow");
+// });

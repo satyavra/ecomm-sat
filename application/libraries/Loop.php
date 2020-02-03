@@ -144,9 +144,9 @@ class Loop
 
 
                        <a class=" qty bg-white text-danger border minus 
-                       " onclick="removeProduct(<?= $article['id']?>, );minusItem(this);">-</a>
+                       " onclick="removeProduct(<?= $article['id']?>),minusItem(this);">-</a>
 
-                       <input type="number" class="input-cart" name="qty" value='<?= $article['num_added'] ?>' style="width: 20px;" >
+                       <input type="number" class="input-cart" name="qty" value='' style="width: 20px;" >
                        <a class="bg-white text-danger border add-to-cart btn-add plus" onclick="plusItem(this);" data-id="<?= $article['id'] ?>">+</a>
                    </div>
 

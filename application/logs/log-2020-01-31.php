@@ -3016,3 +3016,145 @@ ERROR - 2020-01-31 13:55:42 --> 404 Page Not Found: /index
 ERROR - 2020-01-31 13:55:42 --> 404 Page Not Found: /index
 ERROR - 2020-01-31 13:55:46 --> Severity: Warning --> Invalid argument supplied for foreach() F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views\templates\grocery\shopping_cart.php 15
 ERROR - 2020-01-31 13:57:37 --> Severity: Warning --> Invalid argument supplied for foreach() F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views\templates\grocery\shopping_cart.php 15
+ERROR - 2020-01-31 14:00:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:00:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:00:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:00:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:00:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:00:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:00:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:00:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:00:14 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:00:25 --> Severity: Warning --> Invalid argument supplied for foreach() F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views\templates\grocery\shopping_cart.php 15
+ERROR - 2020-01-31 14:07:52 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:07:52 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:07:52 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:07:52 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:07:52 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:07:53 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:07:53 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:07:53 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:08:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:00 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:08:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:08:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:08:27 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:27 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:27 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:27 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:27 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:08:28 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:08:28 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:08:28 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:09:46 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:09:46 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:10:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:10:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:10:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:10:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:10:04 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:04 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:04 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:34 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:34 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:43 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:10:43 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:17:28 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 14:17:28 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 14:17:28 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:18:59 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:18:59 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:18:59 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:18:59 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:18:59 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 14:19:00 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:19:00 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:19:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:19:01 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 14:19:01 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 14:19:01 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 17:03:29 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 17:03:30 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 17:03:30 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 17:03:30 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 17:03:30 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 17:03:32 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 17:03:32 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 17:03:32 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 17:03:32 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 17:03:32 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 17:03:32 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 18:11:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 18:11:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 18:11:03 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 18:11:04 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 18:11:04 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 18:11:05 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 18:11:05 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 18:11:05 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 18:11:05 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 18:11:06 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 18:11:07 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 18:11:07 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 18:11:07 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 18:11:07 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:17 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:38:17 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:38:18 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:38:18 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:38:18 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:38:19 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:19 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:19 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:20 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:38:20 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:38:20 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:20 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:20 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:38:20 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:33 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:33 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:33 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:33 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:33 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:36 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:36 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:36 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:37 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:37 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:40 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:40 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:40 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:40 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:41 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:42 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:42 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:42 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:42 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:42 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:44 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:45 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:45 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:45 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:45 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:46 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:46 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:46 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:47 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:47 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:48 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:39:48 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:39:48 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:39:48 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:39:48 --> Severity: Notice --> Undefined index: num_added F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\libraries\Loop.php 149
+ERROR - 2020-01-31 19:39:49 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:49 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:49 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:49 --> 404 Page Not Found: /index
+ERROR - 2020-01-31 19:39:49 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\bootstrap.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
+ERROR - 2020-01-31 19:39:49 --> Severity: Warning --> file_get_contents(F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\views/templates\grocery\\assets\js\popper.min.js.map): failed to open stream: No such file or directory F:\XAMPP\htdocs\Grofers-clone\ecomm-sat\application\controllers\Loader.php 76
