@@ -133,15 +133,10 @@ class Loop
                     ₹<?= $article['old_price'] != '' ?number_format($article['old_price'], 0) : 0 ?>
                 </s>
             </div>
-            <div class="col-7 ">
-
-                        
+            <div class="col-7 ">    
                         <a href="javascript:void(0);" type="button" class="addTocartBtn add-to-cart btn btn-outline-success btn-rounded" style="border-radius: 1.25rem;" data-id="<?= $article['id'] ?>">Add To Cart</a>
                  
-
                     <div class="qty" style="display: none">
-
-
 
                        <a class=" qty bg-white text-danger border minus 
                        " onclick="removeProduct(<?= $article['id']?>),minusItem(this);">-</a>
@@ -149,7 +144,6 @@ class Loop
                        <input type="number" class="input-cart" name="qty" value='' style="width: 20px;" >
                        <a class="bg-white text-danger border add-to-cart btn-add plus" onclick="plusItem(this);" data-id="<?= $article['id'] ?>">+</a>
                    </div>
-
                </a>
 
            </div>

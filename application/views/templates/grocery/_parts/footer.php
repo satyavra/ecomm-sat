@@ -51,7 +51,7 @@
         This is a primary alert—check it out!
       </div>
 
-    <!-- js files -->
+      <!-- js files -->
 
       <script src="<?= base_url('templatejs/jquery-3.4.1.min.js') ?>"></script>
       <script src="<?= base_url('templatejs/slick.min.js') ?>"></script>
@@ -81,5 +81,80 @@
     <?php } ?>
     <!-- footer end -->
 
-  </body>
-  </html>
+
+
+    // otp verification code
+    <script>
+     var baseURL= "<?php echo base_url();?>";
+     function sendOTP() {
+      $(".error").html("").hide();
+      var number = $("#mobile").val();
+      console.log(number);
+      if (number.length == 10 && number != null) {
+        var input = {
+          "mobile_number" : number,
+          "action" : "send_otp"
+        };
+        $.ajax({
+          url :baseURL+'otpcontroller/otpsender.php',
+          type : 'POST',
+          data : input,
+          success : function(response) {
+            $(".error").html(response);
+          }
+        });
+      } else {
+        $(".error").html('Please enter a valid number!')
+        $(".error").show();
+      }
+    }
+
+    function verifyOTP() {
+      var val1 = $("#digit-1").val();
+      var val2 = $("#digit-2").val();
+      var val3 = $("#digit-3").val();
+      var val4 = $("#digit-4").val();
+
+      var otp =val1.concat(val2, val3,val4);
+      console.log(otp);
+
+      $(".error").html("").hide();
+      $(".success").html("").hide();
+      
+      var input = {
+        "otp" : otp,
+        "action" : "verify_otp"
+      };
+      if (otp.length == 4 && otp != null) {
+        console.log(otp.length);
+        $.ajax({
+          url :baseURL+'otpcontroller/otpsender.php',
+          type : 'POST',
+          data : input,
+          success : function(response) {
+
+            if (response=="1") {
+              $(".error").html("Your OTP is verified");
+              $(".error").show();
+              setTimeout(function(){ 
+               $("#exampleModal2").removeClass("fade").modal("hide"); }, 1000);
+            }
+            else{
+              $(".error").html("Your OTP is not  verified");
+              $(".error").show(); 
+            }
+            
+          },
+          error : function() {
+            alert("ss");
+          }
+        });
+      } else { 
+        $(".error").html('You have entered wrong OTP.')
+        $(".error").show();
+      }
+    }
+  </script>
+
+</body>
+</html>

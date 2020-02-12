@@ -27,7 +27,7 @@
  
 </head>
 <body>
- 
+
   <div  id="loader" class=" card bg-light shadow-sm"style="position:fixed; display:none; z-index: 88888888888;
   top: 79px;
   z-index: 88888888888;
@@ -219,6 +219,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
+    <div class="error text-center text-danger"></div>
         <h5 class="text-center">Phone No Verification</h5>
       </div>
       <div class=" bg-light pb-3">
@@ -229,9 +230,9 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fa fa-mobile"></i></span>
             </div>
-            <input type="text" class="form-control" id="" aria-describedby="" placeholder="">
+            <input id="mobile" type="text" class="form-control" id="" aria-describedby="" placeholder=""onkeyup="btnEnable()">
           </div>
-          <button type="submit" id="dialog-ok" class="btn btn-primary  btn-block mt-3">Next</button>
+          <button type="submit" id="dialog-ok" class="btn btn-primary  btn-block mt-3" onClick="sendOTP();"disabled>Next</button>
         </div> 
       </div>
     </div>
@@ -242,59 +243,34 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
+        <a href="javascript:void(0)" class="text-danger" onClick="modalBack();"><i class="fa fa-angle-left"></i> Back</a>
+        <div class="error text-center text-danger"></div>
         <h5 class="text-center">Phone No Verification</h5>
       </div>
       <div class=" bg-light pb-3">
-        <p class="pt-5 text-center font-weight-normal">Enter 4 code sent to your phone<br>
-
-        +91-9865****89</p>
+        <p class=" showNumber pt-5 text-center font-weight-normal">Enter 4 digit code sent to your phone no <br>
+          <span class='numValue'></span>
+        </p>
         <div class="col-7 mx-auto form-group">
-          <div class=" input-group  mt-2">
-            <div class="input-group-prepend">
-              
+          <div class="digit-group form-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+            <div class=" d-flex">
+              <input class="form-control mx-1" type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+
+              <input class="form-control mx-1" type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+              <input class="form-control mx-1" type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+
+              <input class="form-control mx-1" type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+            </div>
+            <button  id="" class="btn btn-primary  btn-block mt-3" onClick="verifyOTP();">Verify</button>
+            <div class="text-muted pt-2 text-center" id="timerDiv"><span id="time"></span></div>
           </div>
-          <button type="submit"  class="btn btn-primary  btn-block mt-3">Next</button>
+
         </div> 
       </div>
-
-      
-
     </div>
   </div>
 </div>
 
-
-
-
-<!-- <div id="dialog1" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                 <h4 class="modal-title">Modal Dialog 1</h4>
-
-            </div>
-            <div class="modal-body">This is the first modal dialog</div>
-            <div class="modal-footer">
-                <button type="button" id="dialog-ok" class="btn btn-default">Show dialog 2</button>
-                <button type="button" id="dialog-close" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="dialog2" class="modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                 <h4 class="modal-title">Modal Dialog 2</h4>
-
-            </div>
-            <div class="modal-body">This is the second modal dialog</div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" id="test" data-dismiss="modal">OK</button>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 
 

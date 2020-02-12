@@ -97,6 +97,10 @@ $route['(\w{2})/shopping-cart'] = "ShoppingCartPage";
 $route['productCat'] = "home/ProductCategory";
 $route['(\w{2})/productCat'] = "ProductCategory";
 
+//otp Controller
+$route['ajax-request'] = 'OTPSender/otpController';
+$route['\w{2})/ajax-request'] = '/OTPSender/otpController';
+
 
 // Shop page (greenlabel template)
 $route['shop'] = "home/shop";

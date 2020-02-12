@@ -5,7 +5,7 @@
 //     }
 // });
 
-
+var base_url='http://localhost/Grofers-clone/ecomm-sat/'
 
 $(".addTocartBtn").click(function(){
 	$(this).hide();
@@ -235,6 +235,7 @@ function showPosition(position) {
 	console.log( "Latitude: " + position.coords.latitude + 
 		"<br>Longitude: " + position.coords.longitude);
 
+
 	var locAPI ="https://api.opencagedata.com/geocode/v1/json?q="+position.coords.latitude+"+"+position.coords.longitude+"&key=ff1c1acb607548b5827e7eee82b17ff6";
 	
 	$.get({
@@ -278,17 +279,98 @@ $('#locationSelect').on('click', function(event){
 
 // login model popup
 function showDialog2() {
-    $("#exampleModal").removeClass("fade").modal("hide");
-    $("#exampleModal2").modal("show");
+	$("#exampleModal").removeClass("fade").modal("hide");
+	$("#exampleModal2").modal("show");
+	setTimer();
+
 }
 
 // $("#dialog1").modal("show");
 
 $("#dialog-ok").on("click", function () {
 	showDialog2();
+	
+	var num = $("#mobile").val();
+	$(".showNumber .numValue").html('+91- '+ num);
     // alert('msg');
 });
 
 // $("#test").on("click", function () {
 //     $(".modal-backdrop").fadeOut("slow");
 // });
+
+// otp input field code
+
+$('.digit-group').find('input').each(function() {
+	$(this).attr('maxlength', 1);
+	$(this).on('keyup', function(e) {
+		var parent = $($(this).parent());
+		
+		if(e.keyCode === 8 || e.keyCode === 37) {
+			var prev = parent.find('input#' + $(this).data('previous'));
+			
+			if(prev.length) {
+				$(prev).select();
+			}
+		} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+			var next = parent.find('input#' + $(this).data('next'));
+			
+			if(next.length) {
+				$(next).select();
+			} else {
+				if(parent.data('autosubmit')) {
+					parent.submit();
+				}
+			}
+		}
+	});
+});
+
+// enable and disable otp verify button
+
+function btnEnable() {
+	var NumLength = $("#mobile").val().length;
+	if (NumLength==10) {
+		$('#dialog-ok').prop('disabled', false);
+	}else{
+		$('#dialog-ok').prop('disabled', true);
+	}
+}
+
+
+function modalBack() {
+	$("#exampleModal2").removeClass("fade").modal("hide");
+	$("#exampleModal").modal("show");
+
+}
+
+
+	// countdown timer
+
+	function setTimer() {
+		
+		var timeLeft = 10;
+		var elem = timerDiv
+		var timerId = setInterval(countdown, 1000);
+
+		function countdown() {
+			if (timeLeft == -1) {
+				clearTimeout(timerId);
+				doSomething();
+			} else {
+				elem.innerHTML = 'Resend code in '+ timeLeft;
+				timeLeft--;
+			}
+		}
+
+		function doSomething() {
+			createResendLink();
+		}
+	};
+
+	function createResendLink(){
+		document.getElementById("timerDiv").innerHTML =
+		'<a href="javascript:void(0)" class="text-danger" onClick="">Resend Code</a>';
+		
+	}
+// 
