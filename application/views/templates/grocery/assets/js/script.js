@@ -195,6 +195,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){w
  	var loc=getCookie("location");
  	if (loc != "") {
  		$("#LocationSelect").html(loc);
+ 		$('#loc_form').val(loc);
+
  	} else {
  		getLocation();
  	}
@@ -374,3 +376,81 @@ function modalBack() {
 		
 	}
 // 
+
+// checkout_page script
+
+
+     var options = {
+        mode: 'wizard',
+        autoButtonsNextClass: 'btn btn-primary float-right',
+        autoButtonsPrevClass: 'btn btn-light',
+        stepNumberClass: 'badge badge-pill badge-primary mr-1',
+        onSubmit: function() {
+            alert('Form submitted!');
+            return true;
+        }
+    } 
+
+    $( function() {
+
+        $( "#form" ).accWizard(options);
+
+    });
+
+
+    // get val from modal
+    function getValFromModal() {
+    var location = 	 $( "#loc_form" ).val();
+    var name = $("#nameInput").val();
+    var Add1 = $("#addressInput").val();
+    var Add2 = $("#addressInput2").val();
+    var email = $("#emailInput").val();
+    var phone = $("#phoneno").val();
+    alert(name);
+    var DeliveryPlace = $("input[name='inlineRadioOptions']:checked").val();
+   	
+   	$('#deliveryPlaceType').text(location);
+   	$('#usrName').text(name);
+   	$('#usrAddr').text(Add1);
+   	$('#usrAddr2').text(Add2);
+
+   	$("#firstNameInput").val(name);
+   	$("#lastNameInput").val(name);
+   	$("#emailAddressInput").val(email);
+   	$("#addressInput").val(Add2);
+   	$("#cityInput").val(location);
+   	$("#phoneInput").val(phone);
+
+
+   
+
+$("#model_1").removeClass("fade").modal("hide");
+    }
+
+
+
+$("#paypalRadio").click(function(){
+
+  $("#paymentOption").val('PayPal'); 
+});
+
+Razorpay
+$("#Razorpay").click(function(){
+
+  $("#paymentOption").val('Razorpay'); 
+});
+// formValidationCode
+function validateForm() {
+  var a = document.forms["modelForm"]["fname"].value;
+  var b = document.forms["modelForm"]["email"].value;
+  var c = document.forms["modelForm"]["address2"].value;
+  var d = document.forms["modelForm"]["address"].value;
+
+  if (a == "" || b == "" || c == "" || d =="") {
+    alert("(*) marked filds are mandatory");
+    return false;
+  }
+  else{
+  	 getValFromModal();
+  }
+}

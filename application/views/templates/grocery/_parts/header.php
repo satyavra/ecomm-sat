@@ -24,6 +24,7 @@
  <link rel="stylesheet" href="<?= base_url('assets/slick/slick-theme.css') ?>" />
  <link href="<?= base_url('templatecss/style-zaman.css') ?>" rel="stylesheet" />
  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="<?= base_url('templatejs/jquery-3.4.1.min.js') ?>"></script>
  
 </head>
 <body>
@@ -126,7 +127,7 @@
             </datalist> 
 
             <div class="input-group-append">
-             <button class="btn btn-outline-secondary " type="button" id="button-addon2" onclick="gifLoader(), checkCookie();"><i class="fa fa-location-arrow "></i> &nbsp;&nbsp;Detect</button>
+             <button class="btn btn-outline-secondary  " type="button" id="button-addon2" onclick="gifLoader(), checkCookie();" ><i class="fa fa-location-arrow "></i> &nbsp;&nbsp;Detect</button>
            </div>
          </div>
        </form>
@@ -138,7 +139,7 @@
 </ul>
 <div class="input-group d-flex justify-content-center searchbar">
  <div class="input-group-append d-lg-none mr-2 border-0 border border-warning">
-  <span class="input-group-text bg-white p-1 border-0 rounded"><a href="#">Categories</a></span>
+  <span class="input-group-text bg-white p-1 border-0 rounded"><a href="http://localhost/Grofers-clone/ecomm-sat/">Categories</a></span>
 </div>
 <input class="form-control col-md-9 col-sm-2 rounded" type="text" placeholder="Search for items..." aria-label="Search">
 </div>
@@ -170,7 +171,7 @@
 </div>
 <a href="<?=base_url('shopping-cart')?>" style="text-decoration: none;">
 
- <i class="fa fa-shopping-cart d-inline text-white fa-lg" data-toggle="modal" data-target="#exampleModal"></i><span class="pl-1" style="color:white;"><?= $cartItems['array'] == 0 ? 0 : $sumOfItems ?></span>
+ <i class="fa fa-shopping-cart d-inline text-white fa-lg"></i><span class="pl-1 cart-total" style="color:white;"><?= $cartItems['array'] == 0 ? 0 : $sumOfItems ?></span>
 </a>
 
 <div id="mySidenav" class="sidenav">
@@ -190,7 +191,7 @@
 <p class="sideLinks bg-light text-dark" style="font-size: 14px;">Welcome</p>
 
 <div class="list-group">
- <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-user"></i>&nbsp;&nbsp; Login</a>
+ <a href="#" class="list-group-item list-group-item-action" id="dialog-next" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user"></i>&nbsp;&nbsp; Login</a>
  <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; My Addresses</a>
  <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-list-alt"></i>&nbsp;&nbsp; My Orders</a>
  <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true"><i class="fa fa-cart-plus"></i>&nbsp;&nbsp; My Cart</a>

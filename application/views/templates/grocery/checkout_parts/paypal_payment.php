@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<div class="container">
+<div class="container"> 
     <?php
     $sandbox = '.';
     if ($paypal_sandbox == 1) {
@@ -9,9 +9,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     if (!empty($cartItems['array'])) {
         ?>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <img src="<?= base_url('template/imgs/paypal.png') ?>" class="img-responsive paypal-image">
+        <div class="row d-flex justify-content-center" style="margin-top: 200px;">
+            <div class="col-sm-6 ">
+                <img src="<?= base_url('template/imgs/paypal.png') ?>" class="img-fluid paypal-image">
             </div>
         </div>
         <div class="alert alert-info text-center"><?= lang('you_choose_paypal') ?></div>

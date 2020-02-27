@@ -2,11 +2,25 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-?>
-<section>
+if ($cartItems['array'] == 0) {
+  echo "<div class='card mx-auto mb-5' style='width: 18rem;
+  margin-top: 150px;'>
+  <div class='card-body'>
+
+  <i class='fa fa-shopping-basket fa-4x  d-flex justify-content-center my-3' style='font-size:48px;color:red'></i>
+    <p class='card-title text-center text-danger'>No items in your cart<br>
+Your favourite items are just a click away</p>
+   
+    
+    <a href='http://localhost/Grofers-clone/ecomm-sat/' class='btn btn-danger d-flex justify-content-center mt-5'>Continue shopping</a>
+  </div>
+</div>"; 
+ 
+}else{
+  ?> <section>
   <div class="container" id="shopping-cart" style="margin-top: 100px;">
-    <div class="row">
-      <div class="col-md-8" >
+    <div class="row"  style="height: 500px;">
+      <div class="col-md-8 shopingCart" >
         <div class="card">
           <div class="card-header">
             My Cart (<span style="color:black;"><?= $cartItems['array'] == 0 ? 0 : $sumOfItems ?></span>)
@@ -80,9 +94,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
     <div>
-      <button type="button" id="" class="btn btn-outline-success btn-rounded  py-1 mt-3 mb-3 btn-block" style="
+      <a type="button" id="" class="btn btn-outline-success btn-rounded  py-1 mt-3 mb-3 btn-block" href="<?= LANG_URL . '/checkout' ?>" style="
       border-radius: 1.25rem;
-      ">Checkout</button>
+      ">Checkout</a>
     </div>
 
   </div>
@@ -90,4 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </div>
 </div>
-</section>
+</section> <?php 
+}
+
+?>

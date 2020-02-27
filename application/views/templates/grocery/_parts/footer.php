@@ -1,59 +1,182 @@
-<!-- footer start -->
-<footer class="mt-3  d-md-block d-none ">
-  <div class="container-fluid">
-    <div class="row footer-top">
-      <div class="col-sm-4 text-center">
-        <h4 class="ft-text-title">Media Name</h4>
-        <h6 class="ft-desp">Company Name 
-          <br>Country Name
-        </h6>
-        <h4 class="details">
-          <a class="contact" href="tel:+977-1-4107223">
-            <i class="fa fa-phone" aria-hidden="true"></i> +977-000000</a>
-          </h4>
-        </div>
-        <div class="col-sm-4 text-center border-left">
-          <h4 class="ft-text-title">Our Team</h4>
-          <div class="address-member">
-            <p class="member">
-              <b>Director</b> : 
-            </p>
-            <p class="member">
-              <b>Editor</b> : 
-            </p>
-            <p class="member">
-              <b>Reporter</b> : 
-            </p>
-            <p class="member">
-              <b>Reporter</b> : 
-            </p>
+<footer class="mt-3  d-md-block d-none bg-white ">
+  <div class="container-fluid py-2">
+    <div class="container">
+      <p class="text-muted py-3">“SHOP” is owned & managed by “SHOP India Private Limited” and is not related, linked or interconnected in whatsoever manner or nature, to “SHOP.COM” which is a real estate services business operated by “Shop Consultancy Services Private Limited”.</p>
+      <hr>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="row mt-3">
+            <div class="col-md-1">
+              <i class="  fa fa-tags  border p-3 rounded" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-9 ml-5">
+              <p class="text-muted ">Best Prices & Offers</p>
+              <p class="mt-n2 text-muted "><small> Cheaper prices than your local supermarket</small></p>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12 text-center border-left">
-          <h4 class="ft-text-title">About</h4>
-          <div class="pspt-dtls">
-            <a href="#" class="about">About</a>
-            <a href="#" class="team">Team</a>
-            <a href="#" class="advertise">Advertise</a>
-            <br><br><br><br><br><br><br>
+        <div class="col-md-4">
+          <div class="row mt-3">
+            <div class="col-md-1">
+              <i class="  fa fa-list-ol  border p-3 rounded" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-9 ml-5">
+              <p class="text-muted "> 
+              Wide Assortment</p>
+              <p class="mt-n2 text-muted "><small>Choose from 5000+ products across.</small> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row mt-3">
+            <div class="col-md-1">
+              <i class="  fa fa-retweet  border p-3 rounded" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-9 ml-5">
+              <p class="text-muted ">Easy Returns</p>
+              <p class="mt-n2 text-muted "><small>Not satisfied with a product? Return it at the doorstep & get a refund within hours.</small></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row ft-copyright pt-2 pb-2" style="padding-left: 25px;">
-        <div class="col-sm-4 text-pp-crt">cpoyright 2018 All  Rights Reserved</div>
-        <div class="col-sm-4 text-pp-crt-rg">Department of Information Reg No :</div>
-        <div class="col-sm-4 developer">
-          <a href="https://topline-tech.com" target="_blank" class="text-pp-crt">By : <b>T</b>op<b>L</b>ine</a>
-        </div>
+      <hr>
 
-      </footer>
+      <div class="row text-muted">
+        <div class="col-md-5 border-right">
+          <p class="text-muted">Categories</p>
+          <div class="row text-muted">
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><a href="" class="text-muted" ><small>Grocery & Staples</small></a></li>
+                <li><a href="" class="text-muted" ><small>Tea</small></a></li>
+                <li><a href="" class="text-muted" ><small>Atta</small></a></li>
+                <li><a href="" class="text-muted" ><small>Salt & Sugar</small></a></li>
+                <li><a href="" class="text-muted" ><small>Toor Dal</small></a></li>
+                <li><a href="" class="text-muted" ><small>Moong Dal</small></a></li>
+                <li><a href="" class="text-muted" ><small>Tea</small></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><a href="" class="text-muted" ><small>Ghee</small></a></li>
+                <li><a href="" class="text-muted" ><small>Almond</small></a></li>
+                <li><a href="" class="text-muted" ><small>Detergent</small></a></li>
+                <li><a href="" class="text-muted" ><small>Biscuits</small></a></li>
+                <li><a href="" class="text-muted" ><small>Soap</small></a></li>
+                <li><a href="" class="text-muted" ><small>Grains</small></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><a href="" class="text-muted" ><small>Ghee</small></a></li>
+                <li><a href="" class="text-muted" ><small>Almond</small></a></li>
+                <li><a href="" class="text-muted" ><small>Detergent</small></a></li>
+                <li><a href="" class="text-muted" ><small>Biscuits</small></a></li>
+                <li><a href="" class="text-muted" ><small>Soap</small></a></li>
+                <li><a href="" class="text-muted" ><small>Grains</small></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border-right">
+          <p class="text-muted">Useful Links</p>
+          <div class="row">
+            <div class="col-md-6 ml-3">
+              <ul class="list-unstyled">
+                <li><a href="" class="text-muted" ><small>Ghee</small></a></li>
+                <li><a href="" class="text-muted" ><small>Almond</small></a></li>
+                <li><a href="" class="text-muted" ><small>Detergent</small></a></li>
+                <li><a href="" class="text-muted" ><small>Biscuits</small></a></li>
+                <li><a href="" class="text-muted" ><small>Soap</small></a></li>
+                <li><a href="" class="text-muted" ><small>Grains</small></a></li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <ul class="list-unstyled">
+                <li><a href="" class="text-muted" ><small>Ghee</small></a></li>
+                <li><a href="" class="text-muted" ><small>Almond</small></a></li>
+                <li><a href="" class="text-muted" ><small>Detergent</small></a></li>
+                <li><a href="" class="text-muted" ><small>Biscuits</small></a></li>
+                <li><a href="" class="text-muted" ><small>Soap</small></a></li>
+                <li><a href="" class="text-muted" ><small>Grains</small></a></li>
+              </ul>
+            </div>
+            
+          </div>
+
+
+        </div>
+        <div class="col-md-3">
+          <p class="text-muted">Download App</p>
+
+          <p class="text-muted mt-5">Follow Us</p>
+          <p class="text-muted">
+            <i class="fa fa-facebook-square fa-2x px-2" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-2x px-2" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x px-2" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-2x px-2" aria-hidden="true"></i>
+
+
+          </p>
+        </div>
+      </div>
+      <hr>
+
+
+      
+      <div>
+        <p class="text-muted">Brands</p>
+        <ul class="d-flex justify-content-between list-unstyled">
+          <li><a href="" class="text-muted ">FamilyFarm</a></li>
+          <li><a href="" class="text-muted pl-1">Havemore</a></li>
+          <li><a href="" class="text-muted pl-1">MDH</a></li>
+          <li><a href="" class="text-muted pl-1">parle</a></li>
+          <li><a href="" class="text-muted pl-1">Britania</a></li>
+          <li><a href="" class="text-muted pl-1">Catch</a></li>
+          <li><a href="" class="text-muted pl-1">Havmaore</a></li>
+          <li><a href="" class="text-muted pl-1">Nestle</a></li>
+          <li><a href="" class="text-muted pl-1">Maggi</a></li>
+          <li><a href="" class="text-muted pl-1">Priyagold</a></li>
+          <li><a href="" class="text-muted pl-1">Nestle</a></li>
+          <li><a href="" class="text-muted pl-1">Axe</a></li>
+          <li><a href="" class="text-muted pl-1">Boost</a></li>
+          <li><a href="" class="text-muted pl-1">Nescafe</a></li>
+          <li><a href="" class="text-muted pl-1">bournv</a></li>
+          <li><a href="" class="text-muted pl-1">Boost</a></li>
+          <li><a href="" class="text-muted pl-1">Boost</a></li>
+          <li><a href="" class="text-muted pl-1">Boost</a></li>
+          <li><a href="" class="text-muted pl-1">Boost</a></li>
+          
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-muted mt-5 font-weight-bold">Online Grocery Shopping</h3>
+        <p class="text-muted mt-3">Online grocery store in India</p>
+        <p><small class="text-muted">Order online. All your favourite products from the low price online supermarket for grocery home delivery in Delhi, Gurugram, Bengaluru, Mumbai and other cities in India. Lowest prices guaranteed on Patanjali, Aashirvaad, Pampers, Maggi, Saffola, Huggies, Fortune, Nestle, Amul, MamyPoko Pants, Surf Excel, Ariel, Vim, Haldiram's and others.</small></p>
+
+        <p class="text-muted mt-3">One stop shop for all your daily needs</p>
+        <p><small class="text-muted">Order online. All your favourite products from the low price online supermarket for grocery home delivery in Delhi, Gurugram, Bengaluru, Mumbai and other cities in India. Lowest prices guaranteed on Patanjali, Aashirvaad, Pampers, Maggi, Saffola, Huggies, Fortune, Nestle, Amul, MamyPoko Pants, Surf Excel, Ariel, Vim, Haldiram's and others.</small></p>
+        <p class="text-muted mt-3">For best of prices, deals and offers; order online in cities</p>
+        <p><small class="text-muted">Order online. All your favourite products from the low price online supermarket for grocery home delivery in Delhi, Gurugram, Bengaluru, Mumbai and other cities in India. Lowest prices guaranteed on Patanjali, Aashirvaad, Pampers, Maggi, Saffola, Huggies, Fortune, Nestle, Amul, MamyPoko Pants, Surf Excel, Ariel, Vim, Haldiram's and others.</small></p>  
+        <p class="text-muted mt-3">Payment Options</p>
+        <p><i class="fa fa-cc-stripe text-primary p-1 fa-3x" aria-hidden="true"></i><i class="fa fa-cc-paypal text-primary p-1 fa-3x" aria-hidden="true"></i></i><i class="fa fa-cc-jcb text-muted p-1 fa-3x" aria-hidden="true"></i><i class="fa fa-cc-amex text-dark p-1 fa-3x" aria-hidden="true"></i><i class="fa fa-paypal text-dark p-1 fa-3x" aria-hidden="true"></i></p>
+      </div>
+      <p class="text-muted"><small>© Shop India Pvt. Ltd., 2016-2019</small></p>
+      
+    </div>
+
+
+
+  </div>
+
+</footer>
       <div id="notificator" class="alert alert-primary" role="alert">
         This is a primary alert—check it out!
       </div>
 
       <!-- js files -->
 
-      <script src="<?= base_url('templatejs/jquery-3.4.1.min.js') ?>"></script>
       <script src="<?= base_url('templatejs/slick.min.js') ?>"></script>
 
       <script src="<?= base_url('templatejs/bootstrap.min.js') ?>"></script>
@@ -61,6 +184,7 @@
       <script src="<?= base_url('assets/js/placeholders.min.js') ?>"></script>
       <script src="<?= base_url('templatejs/script.js') ?>"></script>    
       <script src="<?= base_url('assets/js/bootstrap-datepicker.min.js') ?>"></script>
+      <script src="<?= base_url('templatejs/jquerryaccordian.js') ?>"></script>
       <script>
         var variable = {
           clearShoppingCartUrl: "<?= base_url('clearShoppingCart') ?>",
@@ -71,6 +195,7 @@
       <script src="<?= base_url('assets/js/system.js') ?>"></script>
       <script src="<?= base_url('loadlanguage/all.js') ?>"></script>
       <script src="<?= base_url('templatejs/mine.js') ?>"></script>
+      <script type="text/javascript" src="assets/jquerryaccordian.js"></script>
 
       <?php if ($cookieLaw != false) { ?>
        <script type="text/javascript">
@@ -83,7 +208,7 @@
 
 
 
-    // otp verification code
+   <!-- otp verification code -->
     <script>
      var baseURL= "<?php echo base_url();?>";
      function sendOTP() {
@@ -154,6 +279,7 @@
         $(".error").show();
       }
     }
+
   </script>
 
 </body>

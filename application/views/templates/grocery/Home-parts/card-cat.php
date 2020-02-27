@@ -36,7 +36,7 @@ foreach ($all_categories as $categorie) {
 
 </style>
 
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5" id="prodcat">
 	<div class="container">
 		<span class="font-weight-bold">Categories</span>
 		<div class="row">

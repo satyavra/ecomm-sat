@@ -37,8 +37,7 @@
 					
 				<?php } else { ?>
 					<div class="alert alert-info"><?= lang('no_sub_categories') ?></div>
-				<?php } ?>
-				
+				<?php } ?>		
 			</div>
 		</div>
 	</div>

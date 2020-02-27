@@ -1,11 +1,11 @@
-<?php
+<?php 
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Checkout extends MY_Controller
 {
 
-    private $orderId;
+    private $orderId; 
 
     public function __construct()
     {
@@ -106,6 +106,12 @@ class Checkout extends MY_Controller
             $_SESSION['discountAmount'] = $_POST['discountAmount'];
             redirect(LANG_URL . '/checkout/paypalpayment');
         }
+
+        if ($_POST['payment_type'] == 'Razorpay') {
+            @set_cookie('Razorpay', $this->orderId, 2678400);
+            $_SESSION['discountAmount'] = $_POST['discountAmount'];
+            redirect(LANG_URL . '/checkout/razorpayPayment');
+        }
     }
 
     private function userInfoValidate($post)
@@ -147,6 +153,9 @@ class Checkout extends MY_Controller
             redirect(LANG_URL . '/checkout');
         }
     }
+
+  
+
 
     public function paypalPayment()
     {
@@ -192,37 +201,63 @@ class Checkout extends MY_Controller
         }
     }
 
-    public function paypal_cancel()
-    {
-        if (get_cookie('paypal') == null) {
-            redirect(base_url());
-        }
-        @delete_cookie('paypal');
-        $orderId = get_cookie('paypal');
-        $this->Public_model->changePaypalOrderStatus($orderId, 'canceled');
-        $data = array();
-        $head = array();
-        $head['title'] = '';
-        $head['description'] = '';
-        $head['keywords'] = '';
-        $this->render('checkout_parts/paypal_cancel', $head, $data);
-    }
 
-    public function paypal_success()
+      public function razorpayPayment()
     {
-        if (get_cookie('paypal') == null) {
-            redirect(base_url());
-        }
-        @delete_cookie('paypal');
-        $this->shoppingcart->clearShoppingCart();
-        $orderId = get_cookie('paypal');
-        $this->Public_model->changePaypalOrderStatus($orderId, 'payed');
         $data = array();
         $head = array();
-        $head['title'] = '';
-        $head['description'] = '';
-        $head['keywords'] = '';
-        $this->render('checkout_parts/paypal_success', $head, $data);
+        $arrSeo = $this->Public_model->getSeo('checkout');
+        $head['title'] = @$arrSeo['title'];
+        $head['description'] = @$arrSeo['description'];
+        $head['keywords'] = str_replace(" ", ",", $head['title']);
+        
+        $this->render('checkout_parts/razorpay_payment', $head, $data);
     }
+    public function razorpay_success(){
+       $data = array();
+       $head = array();
+       $this->load->library('session');
+       $arrSeo = $this->Public_model->getSeo('checkout');
+       $head['title'] = @$arrSeo['title'];
+       $head['description'] = @$arrSeo['description'];
+       $head['keywords'] = str_replace(" ", ",", $head['title']);
+       $this->shoppingcart->clearShoppingCart();
+       $this->render('checkout_parts/razorpaySuccess', $head, $data);
+
+
+   }
+   public function paypal_cancel()
+   {
+    if (get_cookie('paypal') == null) {
+        redirect(base_url());
+    }
+    @delete_cookie('paypal');
+    $orderId = get_cookie('paypal');
+    $this->Public_model->changePaypalOrderStatus($orderId, 'canceled');
+    $data = array();
+    $head = array();
+    $head['title'] = '';
+    $head['description'] = '';
+    $head['keywords'] = '';
+    $this->render('checkout_parts/paypal_cancel', $head, $data);
+}
+
+public function paypal_success()
+{
+    if (get_cookie('paypal') == null) {
+        redirect(base_url());
+    }
+    @delete_cookie('paypal');
+    $this->load->library('session');
+    $this->shoppingcart->clearShoppingCart();
+    $orderId = get_cookie('paypal');
+    $this->Public_model->changePaypalOrderStatus($orderId, 'payed');
+    $data = array();
+    $head = array();
+    $head['title'] = '';
+    $head['description'] = '';
+    $head['keywords'] = '';
+    $this->render('checkout_parts/paypal_success', $head, $data);
+}
 
 }

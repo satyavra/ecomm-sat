@@ -6,7 +6,7 @@ body{
 }
 .slick-prev:before {
 	color:#a7bcce;
-}
+} 
 
 
 
@@ -425,3 +425,133 @@ h1 {
 	/*loader*/
 	
 }
+/*checkout page */
+
+div[data-acc-content] { display: none;  }
+div[data-acc-step]:not(.open) { background: #f2f2f2;  }
+div[data-acc-step]:not(.open) h5 { color: #777;  }
+div[data-acc-step]:not(.open) .badge-primary { background: #ccc;  }
+.gcolor{
+	color: rgb(199,75,20);
+}
+
+
+nav > div a.nav-item.nav-link{
+	color:black;
+}
+nav > div a.nav-item.nav-link.active
+{
+
+	background-color: #e74c3c ;
+	color: white;
+}
+
+
+nav > div a.nav-item.nav-link.active:after
+{
+
+
+	content: "";
+	position: relative;
+	bottom: -1px;
+	left: -27%;
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 9px solid #f6f0f0;
+
+
+}
+.datescroller {
+	background-color: lightblue;
+	width: 590px;
+	height: 80px;
+	overflow: scroll;
+}
+
+
+@media (max-width: 576px) {
+	header { width:576px; }
+	.checkoutForm{
+
+	}
+	.checkoutForm h5{
+		font-size: 17px;
+	}
+	.checkoutForm p{
+		font-size: 15px;
+	}
+	#phoneinpt{
+		width: 222px;
+	}
+	#Phonenext{
+		width: 208px;
+	}
+
+	.deliveryAdd{
+		    position: relative;
+    left: -36px;
+	}
+.addInput{
+	padding-left: 85px;
+    padding-right: 85px;
+    width: 143px;
+}
+.addressbtn{
+	position: relative;
+    left: -89px;
+    width: 140px;
+}
+.datescroller{
+	width: 246px;
+}
+.total{
+	margin-top: -36px;
+}
+.delivery{
+	    position: relative;
+    top: -2px;
+    left: -42px;
+}
+
+.deliveryCharge{
+	top: -12px;
+    margin-top: -39px;
+    margin-right: -37px;
+}
+
+
+.bankpromo{
+	margin-left: 39px;
+    padding-top: -78px;
+    position: relative;
+    top: -24px;
+}
+
+.bankpromoicon{
+	    position: relative;
+    top: -48px;
+    left: 246px;
+}
+.offerssec{
+	margin-top: 33px;
+}
+.paymentoptions{
+	width: 280px;
+	overflow-y: scroll;
+}
+
+.cart-total{
+	position: relative;
+    top: -114px;
+    left: 259px;
+}
+.paymentOption{
+
+overflow-x: scroll;	
+}
+}
+
+
+

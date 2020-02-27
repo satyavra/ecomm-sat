@@ -1,4 +1,4 @@
-<h1><img src="<?= base_url('assets/imgs/template-admin-logo.png') ?>" class="header-img" style="margin-top:-2px;"> Templates 1</h1>
+<h1><img src="<?= base_url('assets/imgs/template-admin-logo.png') ?>" class="header-img" style="margin-top:-2px;"> Templates</h1>
 <hr>
 <form id="saveTemplate" method="POST" action="">
     <input type="hidden" name="template" class="template-name" value="">
